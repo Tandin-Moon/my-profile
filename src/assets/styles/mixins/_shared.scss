@@ -1,0 +1,33 @@
+$remValue: 0.0625;
+
+//margin, padding, border-radius, height
+@mixin boxModel($values, $className, $direction) {
+  @each $size in $values {
+    @if $size < 0 {
+      #{'.'+$className +'-'+'N'+-$size} {
+        @each $property in $direction {
+          #{$property}: #{$size * $remValue}rem;
+        }
+      }
+    }
+
+    @else {
+      #{'.'+$className +'-'+ $size} {
+        @each $property in $direction {
+          #{$property}: #{$size * $remValue}rem;
+        }
+      }
+    }
+  }
+}
+
+/* mixin to generate class for font-size and icon-size. */
+@mixin size($amount, $className) {
+  @each $size in $amount {
+    #{'.'+$className+ '-' + $size } {
+        font-size: #{$size * $remValue}rem;
+        width: #{$size * $remValue}rem;
+        height: #{$size * $remValue}rem;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@use 'shared' as *;
+
+@include boxModel((0, 4, 6, 8, 60, 100), 'br', 'border-radius');
+@include boxModel((4, 8), 'br-top', ('border-top-left-radius', 'border-top-right-radius'));
+@include boxModel((8), 'br-bottom', ('border-bottom-left-radius', 'border-bottom-right-radius'));
+@include boxModel((4), 'br-bl', 'border-bottom-left-radius');
+@include boxModel((8), 'br-tl', 'border-top-left-radius');
+@include boxModel((8), 'br-bl', 'border-bottom-left-radius');

@@ -1,0 +1,9 @@
+@use 'shared' as *;
+
+@include boxModel((0, 16, 20, 24), 'm', 'margin');
+@include boxModel((0, 4, 8, 12, 16, 24, 32, 40, 48, 56, 60), 'mr', 'margin-right');
+@include boxModel((0, 4, 8, 12, 16, 24, 32, 48, 60), 'ml', 'margin-left');
+@include boxModel((0, 4, 8, 10, 12, 16, 20, 24, 28, 32, 40), 'mb', 'margin-bottom');
+@include boxModel((0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 40, 48, 50, 52, 60, 72, 80, 100, 120, 148, 164), 'mt', 'margin-top');
+@include boxModel((0, 8, 12, 16, 24, 32, 48), 'mx', ('margin-right', 'margin-left'));
+@include boxModel((0, 8, 12, 16, 20, 24, 40, 48), 'my', ('margin-top', 'margin-bottom'));
