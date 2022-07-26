@@ -1,0 +1,27 @@
+@use 'src/assets/styles/variables';
+
+.about-us {
+  &__border {
+    box-shadow: 12px 24px rgba(0,0,0,.15);
+    transition: all .4s ease;
+
+    img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0 0 0 0% / 0% 0% 0% 0% ;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 83%, 75% 83%, 75% 100%, 50% 83%, 0 83%);
+    }
+
+    &:hover {
+      border-radius: 0 0 50% 50% / 0% 0% 5% 5% ;
+      box-shadow: 16px 28px rgba(0,0,0,.25);
+    }
+  }
+
+  &__line {
+    width: 50px;
+    border-top-color: variables.$primary;
+    border-width: 3px;
+    border-radius: 40px;
+  }
+}

@@ -1,0 +1,19 @@
+<div fxLayout="row" fxLayoutAlign="space-between center" class="about-me height--full">
+  <div fxFlex="40" class="color--white height--full">
+    <div fxLayout="row" fxLayoutAlign="start center" class="mt-60">
+      <span class="fs-16">Hi there</span>
+      <img width="50px" height="50px" class="mx-8" src="../../../assets/images/introduction-logo.svg" alt="logo"/>
+      <span class="fs-16">I am</span>
+    </div>
+
+    <h1 class="fs-72 mt-0 mb-24">{{ aboutMeValue?.[2]?.['name']}}</h1>
+    <div fxLayout="row" fxLayoutAlign="start center" class="my-32">
+      <span class="color--primary mr-8 fs-24 text--bold">{{ aboutMeValue?.[2]?.['job'] }}</span>
+      <img class="about-me__status mx-8" src="../../../assets/images/hello.svg" alt="About Me"/>
+    </div>
+    <p class="mr-60 mt-32 line-height--28">{{ aboutMeValue?.[2]?.['jobDescription'] }}</p>
+  </div>
+  <div fxFlex="47" fxLayoutAlign="center">
+    <img class="about-me__profile" src="../../../assets/images/profile.png" alt="profile picture"/>
+  </div>
+</div>

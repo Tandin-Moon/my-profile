@@ -26,8 +26,6 @@ $remValue: 0.0625;
   @each $size in $amount {
     #{'.'+$className+ '-' + $size } {
         font-size: #{$size * $remValue}rem;
-        width: #{$size * $remValue}rem;
-        height: #{$size * $remValue}rem;
     }
   }
 }

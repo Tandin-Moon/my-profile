@@ -1,5 +1,23 @@
-$material-icon-outlined: 'Material Icons Outlined';
+@use "variables";
 
-.material-icons {
-  font-family: $material-icon-outlined;
+.mat-button-base {
+  height: 44px !important;
+}
+
+.mat-form-field-outline {
+  color: variables.$white !important;
+}
+
+.mat-form-field-label {
+  color: variables.$white !important;
+}
+
+.text-area-input {
+  height: 200px;
+}
+
+.mat-form-field-outline,
+::placeholder {
+  color: variables.$white !important;
+  font-size: 14px;
 }

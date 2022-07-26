@@ -1,0 +1,13 @@
+<div fxLayout="row" fxLayoutAlign="space-between center">
+  <div fxLayoutAlign="start center" fxFlex="50">
+    <img height="60px" src="../../../assets/images/main-logo.svg" alt="logo"/>
+  </div>
+
+  <div fxLayout="row" fxFlex="50" fxLayoutAlign="space-between" class="nav--list">
+    <ul fxFlexFill class="fs-16 my-0">
+      <li fxFlex="20" *ngFor="let nav of navList">
+        <a class="text--decoration-none color--white cursor--pointer" routerLink='{{ nav.navLink }}'>{{ nav.name }}</a>
+      </li>
+    </ul>
+  </div>
+</div>

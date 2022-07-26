@@ -1,0 +1,17 @@
+@use '../../../assets/styles/variables';
+
+.nav--list {
+  li {
+    list-style: none;
+
+    a {
+      transition: 0.15s;
+
+      &:hover {
+        font-weight: bold;
+        color: variables.$primary;
+        transition: 0.25s;
+      }
+    }
+  }
+}

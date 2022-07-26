@@ -1,0 +1,26 @@
+<div class="about-us project-list color--white mt-60">
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <span class="fs-16 color--primary text--bold">My Project</span>
+    <div class="ml-8">
+      <mat-divider class="about-us__line"></mat-divider>
+    </div>
+  </div>
+
+  <h3 class="fs-24 mt-20 mb-24 text--center">My Portfolio</h3>
+
+  <div fxLayout="row" fxLayoutAlign="center">
+    <div fxFlex="30" class="project-list__image mr-24 cursor--pointer" *ngFor="let list of projectList">
+      <img width="100%" height="100%" class="br-4" [src]='list.imageSrc' alt="Project Image"/>
+      <div class="info px-24 text--center">
+        <h2 class="my-0">{{ list.title }}</h2>
+        <p>
+          {{ list.desc }}
+        </p>
+
+        <div class="text--center">
+          <button mat-flat-button color="primary"><span class='color--black'>Visit Website</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

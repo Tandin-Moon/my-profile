@@ -4,7 +4,7 @@ $my-palette: (
   200 : #9eadc0,
   300 : #778ca6,
   400 : #5a7393,
-  500 : #3d5a80,
+  500 : #03DAC6,
   600 : #375278,
   700 : #2f486d,
   800 : #273f63,
@@ -30,3 +30,23 @@ $my-palette: (
     A700 : #ffffff,
   )
 );
+
+@use '@angular/material' as mat;
+@include mat.core();
+
+$my-profile-primary: mat.define-palette($my-palette);
+$my-profile-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$my-profile-warn: mat.define-palette(mat.$red-palette);
+
+$my-profile-theme: mat.define-light-theme((
+  color: (
+    primary: $my-profile-primary,
+    accent: $my-profile-accent,
+    warn: $my-profile-warn,
+  )
+));
+
+@include mat.all-component-themes($my-profile-theme);
+$primary: mat.get-color-from-palette($my-profile-primary);
+
+//#03DAC6

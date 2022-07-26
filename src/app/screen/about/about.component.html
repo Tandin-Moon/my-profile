@@ -1,0 +1,23 @@
+<div fxLayout="row" fxLayoutAlign="center" class="about-us mt-60">
+  <div class="color--white text--center height--full line-height--28" fxFlex="45">
+    <div class="about-us__border">
+      <img src="assets/images/about-us.jpg" class="mb-8"/>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <span class="fs-16 color--primary text--bold">Who I am</span>
+      <div class="ml-8">
+        <mat-divider class="about-us__line"></mat-divider>
+      </div>
+    </div>
+    <h3 class="fs-24 mt-16 text--bold">About Me</h3>
+
+    <div class="fs-16 mb-48">
+      <p class="mb-24 line-height--28">
+        {{ aboutMeValue?.[2]?.['about'] }}
+      </p>
+    </div>
+
+    <button mat-flat-button color="primary"><span class='color--black'>Download CV</span></button>
+  </div>
+</div>

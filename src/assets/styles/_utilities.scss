@@ -44,6 +44,10 @@
   &--decoration-none {
     text-decoration: none;
   }
+
+  &--bold {
+    font-weight: bold;
+  }
 }
 
 .width {
@@ -77,5 +81,15 @@
 .border{
   &--input fieldset {
     border-radius: 8px;
+  }
+}
+
+.line-height {
+  &--24 {
+    line-height: 24px;
+  }
+
+  &--28 {
+    line-height: 28px;
   }
 }

@@ -1,0 +1,12 @@
+
+.about-me {
+  &__status {
+    height: 60px;
+  }
+
+  &__profile {
+    height: 500px;
+    object-fit: cover;
+    clip-path: polygon(100% 0, 100% 71%, 56% 100%, 41% 100%, 0 70%, 0% 0%);
+  }
+}

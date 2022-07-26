@@ -1,0 +1,31 @@
+@use 'variables';
+
+html, body {
+  height: 100%;
+  background-color: variables.$primary-section-background;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.primary-section-background {
+  background-color: variables.$primary-section-background;
+}
+
+.secondary-section-background {
+  background-color: variables.$secondary-section-background;
+}
+
+
+.color {
+  &--white {
+    color: variables.$white;
+  }
+
+  &--primary{
+    color:  variables.$primary;
+  }
+
+  &--black {
+    color: variables.$primary-section-background;
+  }
+}
